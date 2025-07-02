@@ -1,0 +1,31 @@
+.headerHeader {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0%;
+}
+
+.menyHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
