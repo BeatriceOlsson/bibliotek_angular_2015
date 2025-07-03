@@ -1,0 +1,19 @@
+.formPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+h3, label {
+    margin: 0;
+}
