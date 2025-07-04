@@ -1,23 +1,66 @@
 <div class="formPage">
   <h2>Addera book till bibliotecket!</h2>
-  <form action="submit">
+  <form (ngSubmit)="submit()">
     <label for="title">Bock titel:</label><br />
-    <input type="text" id="title" name="title" /><br />
-    <label for="">Förfatare:</label><br />
-    <input type="text" id="title" name="title" /><br />
-    <label for="">Betyg mellan 1-10:</label><br />
-    <input type="number" id="title" name="title" /><br />
-    <label for="">Publiserings datum:</label><br />
-    <input type="date" id="title" name="title" /><br />
-    <label for="">Omslagsbild:</label><br />
-    <input type="file" id="title" name="title" /><br />
-    <label for="">Bild på förfatare</label><br />
-    <input type="file" id="title" name="title" /><br />
-    <label for="">Länk till shop:</label><br />
-    <input type="text" id="title" name="title" /><br />
-    <label for="">Biskrivning:</label><br />
-    <textarea id="title" name="title" rows="10" cols="100"></textarea><br />
-    <label for="">Omdöme:</label><br />
-    <textarea id="title" name="title" rows="10" cols="100"></textarea><br />
+    <input
+      type="text"
+      name="title"
+      [(ngModel)]="book().title"
+      (ngModelChange)="update('title', $event)"
+    /><br />
+    <label for="author">Förfatare:</label><br />
+    <input
+      type="text"
+      name="author"
+      [(ngModel)]="book().author"
+      (ngModelChange)="update('author', $event)"
+    /><br />
+    <label for="opinion">Betyg mellan 1-10:</label><br />
+    <input
+      type="number"
+      name="opinion"
+      [(ngModel)]="book().opinion"
+      (ngModelChange)="update('opinion', $event)"
+    /><br />
+    <label for="published">Publiserings datum:</label><br />
+    <input
+      type="date"
+      name="published"
+      [(ngModel)]="book().published"
+      (ngModelChange)="update('published', $event)"
+    /><br />
+    <label for="image">Omslagsbild först och förfatare sen:</label><br />
+    <input
+      type="file"
+      name="image"
+      (change)="handleFileChange($event)"
+      multiple
+    /><br />
+    <label for="link">Länk till shop:</label><br />
+    <input
+      type="text"
+      name="link"
+      [(ngModel)]="book().link"
+      (ngModelChange)="update('link', $event)"
+    /><br />
+    <label for="description">Biskrivning:</label><br />
+    <textarea
+      name="description"
+      [(ngModel)]="book().description"
+      (ngModelChange)="update('description', $event)"
+      rows="10"
+      cols="100"
+    ></textarea
+    ><br />
+    <label for="text">Omdöme:</label><br />
+    <textarea
+      name="text"
+      [(ngModel)]="book().text"
+      (ngModelChange)="update('text', $event)"
+      rows="10"
+      cols="100"
+    ></textarea
+    ><br />
+    <button type="submit">Spara boken</button>
   </form>
 </div>
