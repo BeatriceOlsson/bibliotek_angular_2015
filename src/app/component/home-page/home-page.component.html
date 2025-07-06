@@ -1,1 +1,12 @@
-<p>home-page works!</p>
+<div *ngFor="let book of books()">
+  <li>
+    <h2>{{ book.title }}</h2>
+    <app-image-switch [image]="book.image"></app-image-switch>
+    <h3>{{ book.author }}</h3>
+    <h3>{{ book.published }}</h3>
+    <p>{{ book.description }}</p>
+    <button (click)="textExpend()">
+      {{ textCollapse() ? "Visa mindre..." : "Visa mer..." }}
+    </button>
+  </li>
+</div>

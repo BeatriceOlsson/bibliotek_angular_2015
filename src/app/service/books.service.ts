@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Component, Injectable, isStandalone } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface Book {
@@ -26,7 +26,7 @@ export class BooksService {
     return this.http.get<Book[]>('http://localhost:3000/books');
   }
 
-addBook(bookData: FormData): Observable<any> {
-  return this.http.post('/api/books', bookData);
+  addBook(bookData: FormData): Observable<any> {
+    return this.http.post('/api/books', bookData);
   }
 }
