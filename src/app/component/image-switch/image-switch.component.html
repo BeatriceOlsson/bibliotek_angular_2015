@@ -1,8 +1,6 @@
 <p>image-switch works!</p>
-<div *ngIf="currentImage()">
+<div class="bookImage" *ngIf="currentImage()">
   <img [src]="currentImage()" alt="bild" width="300" />
-</div>
-<div>
-  <button (click)="previous()">Föregående</button>
-  <button (click)="next()">Nästa</button>
+  <button class="nextButton" (click)="previous()">›</button>
+  <button class="prevButton" (click)="next()">‹</button>
 </div>
