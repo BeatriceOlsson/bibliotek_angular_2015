@@ -10,6 +10,7 @@ import { Component, computed, effect, input, signal } from '@angular/core';
 })
 export class ImageSwitchComponent {
 
+  //fetches the images and keeps track of then thru its index.  
   image = input<string[]>();
   currentIndex = signal<number>(0);
   currentImage = computed(() => {
@@ -21,6 +22,8 @@ export class ImageSwitchComponent {
     return images[index];
   });
 
+  //Changes the image by updating the index. 
+  // If the index exceeds bounds, it wraps around to the beginning or end.
   next() {
     const images = this.image();
     if(!images || images.length === 0) return;

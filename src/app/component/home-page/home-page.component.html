@@ -1,6 +1,7 @@
 <div *ngFor="let book of books()">
   <li>
     <h2>{{ book.title }}</h2>
+    <!--Container to control image size and reuse the component-->
     <div style="width: 200px; height: auto">
       <app-image-switch [image]="book.image"></app-image-switch>
     </div>

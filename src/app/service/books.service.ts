@@ -22,6 +22,7 @@ export class BooksService {
 
   constructor(private http: HttpClient) { }
 
+  //Gets data from db.json. Needs to be running to be function properly.
   getBooks() {
     return this.http.get<Book[]>('http://localhost:3000/books');
   }
