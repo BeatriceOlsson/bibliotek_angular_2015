@@ -1,15 +1,17 @@
-<div *ngFor="let book of books()">
+<div *ngFor="let book of books(); let i = index">
   <li>
     <h2>{{ book.title }}</h2>
     <!--Container to control image size and reuse the component-->
-    <div style="width: 200px; height: auto">
+    <div style="width: 200px; height: auto" class="homeImage">
       <app-image-switch [image]="book.image"></app-image-switch>
     </div>
     <h3>{{ book.author }}</h3>
     <h3>{{ book.published }}</h3>
-    <p>{{ book.description }}</p>
-    <button (click)="textExpend()">
-      {{ textCollapse() ? "Visa mindre..." : "Visa mer..." }}
+    <div class="homeDescription" [class.expanded]="textExpend(i)" [class.clamped]="!textExpend(i)">
+      <p>{{ book.description }}</p>
+    </div>
+    <button (click)="discriptionBook(i)">
+      {{ textExpend(i) ? "Visa mindre..." : "Visa mer..." }}
     </button>
   </li>
 </div>

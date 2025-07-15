@@ -12,24 +12,36 @@ import { ImageSwitchComponent } from '../image-switch/image-switch.component';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
-  textCollapse = signal<boolean>(true);
+  textCollapse = signal<Set<number>>(new Set);
   books = signal<Book[]>([]);
 
-  textExpend() {
-    this.textCollapse.update(value => !value);
+  discriptionBook(index: number) {
+    this.textCollapse.update(set => {
+      const newSet = new Set(set);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    })
   }
-  
-  constructor( private booksService: BooksService) { this.fetchBook();}
 
-  fetchBook () {
+  textExpend(index: number): boolean {
+    return this.textCollapse().has(index);
+  }
+
+  constructor(private booksService: BooksService) { this.fetchBook(); }
+
+  fetchBook() {
     this.booksService.getBooks().subscribe((data) => {
       const sortedData = [...data].sort((a, b) =>
-      new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+        new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
-      const latestTow = sortedData.slice(0,2);
+      const latestTow = sortedData.slice(0, 2);
       this.books.set(latestTow);
     });
   }
 
-  
+
 }
