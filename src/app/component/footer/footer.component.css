@@ -1,5 +1,5 @@
 .footer {
-    background-color: aquamarine;
+    background-color: var(--second-color);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
