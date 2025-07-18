@@ -2,18 +2,20 @@
   <li>
     <h2>{{ book.title }}</h2>
     <!--Container to control image size and reuse the component-->
-    <div style="width: 100px; height: auto" class="homeImage">
+    <div style="width: 150px; height: auto" class="homeImage">
       <app-image-switch [image]="book.image"></app-image-switch>
     </div>
     <div class="homeInformation">
       <h3>{{ book.author }}</h3>
       <h3>{{ book.published }}</h3>
     </div>
-    <div class="homeDescription" [class.expanded]="textExpend(i)" [class.clamped]="!textExpend(i)">
-      <p>{{ book.description }}</p>
+    <div class="descriptionContainer">
+      <div class="homeDescription" [class.expanded]="textExpend(i)" [class.clamped]="!textExpend(i)">
+        <p>{{ book.description }}</p>
+      </div>
+      <button class="homePageButton" (click)="discriptionBook(i)">
+        {{ textExpend(i) ? "Visa mindre..." : "Visa mer..." }}
+      </button>
     </div>
-    <button class="homePageButton" (click)="discriptionBook(i)">
-      {{ textExpend(i) ? "Visa mindre..." : "Visa mer..." }}
-    </button>
   </li>
 </div>
