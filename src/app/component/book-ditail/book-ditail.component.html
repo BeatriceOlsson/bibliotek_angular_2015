@@ -1,0 +1,9 @@
+@if (book()){
+<div>
+  <h1>{{ book()?.title }}</h1>
+</div>
+} @else {
+<ng-template #loading>
+  <p>Ladar...</p>
+</ng-template>
+}
