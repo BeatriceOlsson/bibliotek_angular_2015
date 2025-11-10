@@ -3,7 +3,7 @@ import { Component, Injectable, isStandalone } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface Book {
-  id: number,
+  id: string,
   title: string,
   author: string,
   opinion: number,

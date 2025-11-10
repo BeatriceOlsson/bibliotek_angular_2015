@@ -7,6 +7,6 @@ import { BookListPageComponent } from './component/book-list-page/book-list-page
 export const routes: Routes = [
     {path:'', component: HomePageComponent},
     {path:'add-book', component: AddBookComponent},
-    {path:'book-ditail/:id', component: BookDitailComponent},
+    {path:'app-book-ditail/:id', component: BookDitailComponent},
     {path:'app-book-list-page', component: BookListPageComponent}
 ];

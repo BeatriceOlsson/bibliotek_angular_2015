@@ -1,9 +1,24 @@
-@if (book()){
-<div>
-  <h1>{{ book()?.title }}</h1>
+<div *ngIf="book() as currentBook; else loading">
+  <div style="width: 150px; height: auto" class="homeImage">
+    <app-image-switch [image]="currentBook.image"></app-image-switch>
+  </div>
+  <div class="bookInformation">
+    <h1>{{ currentBook.title }}</h1>
+    <h2>{{ currentBook.author }}</h2>
+    <h2>{{ currentBook.opinion }}</h2>
+    <h2>{{ currentBook.published }}</h2>
+    <h3>
+      Köp boken
+      <a href="{{ currentBook.link }}" rel="noopener" target="_blank">här</a>
+    </h3>
+  </div>
+  <div class="bookText">
+    <p>{{ currentBook.description }}</p>
+    <br />
+    <p>{{ currentBook.text }}</p>
+  </div>
 </div>
-} @else {
+
 <ng-template #loading>
-  <p>Ladar...</p>
+  <p>Laddar...</p>
 </ng-template>
-}

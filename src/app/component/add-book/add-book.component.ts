@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class AddBookComponent {
   constructor(private bookService: BooksService) {}
  book = signal<Omit<Book, 'image'>>({
-    id: 0,
+    id: "0",
     title: '',
     author: '',
     opinion: 0,
