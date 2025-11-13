@@ -9,5 +9,12 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+menyOpen = false;
 
+  toggleMenu() {
+    this.menyOpen = !this.menyOpen;
+  }
+  closeMenu() {
+    this.menyOpen = false;
+  }
 }

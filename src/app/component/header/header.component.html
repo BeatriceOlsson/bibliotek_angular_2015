@@ -1,10 +1,17 @@
 <header class="headerHeader">
   <h1>Mitt Bibliotek</h1>
-  <img src="assets/images/books.png" width="100px" height="auto" />
-  <ul class="menyHeader">
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="book-ditail/:id">Senaste läst</a></li>
-    <li><a routerLink="app-book-list-page">Bok lista</a></li>
-    <li><a routerLink="">Om mig</a></li>
-  </ul>
+  <img src="assets/images/books.png" />
+    <ul class="menyHeader" [class.open]="menyOpen">
+      <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="book-ditail/:id"  (click)="closeMenu()">Senaste läst</a></li>
+      <li><a routerLink="app-book-list-page"  (click)="closeMenu()">Bok lista</a></li>
+      <li><a routerLink=""  (click)="closeMenu()">Om mig</a></li>
+    </ul>
+
+  <div class="hamburger" (click)="toggleMenu()" >
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
 </header>
