@@ -17,12 +17,12 @@ export class BookDitailComponent {
   private bookServer = inject(BooksService)
 
   books = signal<Book[]>([]);
-  bookId = computed(() =>this.route.snapshot.paramMap.get('id'));
-  book = computed(() => this.books().find(b => b.id === this.bookId()));
+  bookId = computed(() => this.route.snapshot.paramMap.get('id'));
+  book = computed<Book | undefined>(() => this.books().find(b => b.id === this.bookId()));
 
   constructor() {
     this.bookServer.getBooks().subscribe(data => {
-    this.books.set(data);
+      this.books.set(data);
     });
   }
 }

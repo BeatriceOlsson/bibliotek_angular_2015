@@ -1,7 +1,7 @@
 {
     "books": [
         {
-            "id": 1,
+            "id": "1",
             "title": "Carry on, Jeeves",
             "author": "P.G.Wodehouse",
             "opinion": 9,
@@ -16,7 +16,7 @@
             "text": "Carry On, Jeeves av P.G. Wodehouse är en av mina absoluta favoriter och en perfekt bok att ta med på resor. Dess format, med flera fristående noveller, gör det enkelt att läsa en berättelse i taget och komma tillbaka när som helst utan att tappa tråden. Huvudpersonerna Bertie Wooster och hans betjänt Jeeves är en oemotståndlig duo. Bertie lyckas alltid hamna i knipa med sina missriktade försök att hjälpa vänner eller navigera överklassens intriger. Jeeves, å andra sidan, löser varje situation med briljans och elegans. Bokens styrka ligger i dess humor och satir över överklassens liv. Wodehouse kombinerar absurda scenarier med vassa dialoger och ett charmigt språk. Samtidigt ger berättelserna en rolig inblick i hur folk tänkte och levde under tidigt 1900-tal. Den lättsamma tonen och Jeeves-geniets problemlösning gör denna bok både underhållande och avslappnande. Det är en tidlös klassiker som jag ständigt återkommer till och alltid packar med mig på resor."
         },
         {
-            "id": 2,
+            "id": "2",
             "title": "A Very English Murder",
             "author": "Verity Bright",
             "opinion": "7",
@@ -29,6 +29,21 @@
             "link": "https://www.adlibris.com/sv/bok/a-very-english-murder-9781838886189",
             "description": "I Verity Brights 'A Very English Murder' introduceras Lady Eleanor Swift, en äventyrlig kvinna som återvänder till England på 1920-talet för att ta över Henley Hall efter sin farbrors död. När hon en kväll bevittnar vad hon tror är ett mord, men ingen kropp hittas, avfärdas hennes oro av polisen. Med hjälp av sin trofasta butler Clifford och bulldoggen Gladstone inleder Eleanor en egen utredning. Berättelsen rör sig genom herrgårdsmiljöer, samhällskonventioner och hemligheter, där Eleanor utmanar både könsroller och lokala maktstrukturer i jakten på sanningen.",
             "text": "Test av text"
+        },
+        {
+            "id": "3",
+            "title": "Death at the Dance",
+            "author": "Verity Bright",
+            "opinion": "6",
+            "published": "2020-07-08",
+            "createdAt": "2025-11-14T12:30:00+02:00",
+            "image": [
+                "assets/images/Death_at_the_Dance.jpg",
+                "assets/images/images2.jpg"
+            ],
+            "link": "https://www.adlibris.com/sv/bok/a-very-english-murder-9781838886189",
+            "description": "I Death at the Dance, den andra boken i Lady Eleanor Swift-serien, kastas Eleanor åter in i en virvel av glamour, sociala förväntningar och dödligt allvar. När hon deltar i en elegant välgörenhetsbal – mer av plikt än av nöje – blir kvällen snabbt något helt annat än en festlig tillställning. Ett oförklarligt dödsfall skakar societeten, och Eleanor befinner sig oväntat nära både dramat och offret. Trots att hon helst skulle tillbringa dagen därpå i hemmets trygga lugn, med en kopp te och avstånd till all form av glitter, hamnar hon återigen mitt i ett mysterium. Drivkraften att förstå vad som hänt – och en växande känsla av ansvar – för henne allt djupare in i en värld av dans, intriger och hemligheter som döljs bakom leenden och vackra fasader. Med hjälp av sina färgstarka allierade, inte minst den pålitlige butlern Clifford, navigerar Eleanor genom överklassens sociala spel, där nästan alla verkar ha något att dölja och där sanningen dansar lika undvikande som gästerna på balsalens golv. Ju närmare hon kommer mordets kärna, desto mer inser hon att varje detalj kan vara avgörande – från viskningar i kulisserna till subtila blickar över champagneglas. Atmosfären är lättsam, charmig och fylld av humor, men under ytan bubblar en oväntad spänning som leder fram till ett avslut som både överraskar och engagerar. Även om själva avslöjandet av mördaren är kort och elegant, är det resan dit – med dess karaktärer, samhällsskildring och frestande små gåtor – som gör boken så tilltalande.",
+            "text": "Det som främst gör Death at the Dance till en så njutbar del i Lady Eleanor Swift-serien är hur den lyckas kombinera charm och spänning med en huvudperson som känns genuint mänsklig. En av de mest sympatiska aspekterna – och något som verkligen sticker ut i just denna bok – är hur varsamt och humoristiskt författaren skildrar Eleanors personliga reaktioner på det sociala livet hon förväntas delta i. Hennes trötthet dagen efter balen är både rolig och befriande att läsa om. Hon låter nästan som en äldre tant som helst vill dra sig tillbaka med en filt och en kopp te, och just det gör henne så otroligt relaterbar. Det finns något igenkänningsbart i hennes ovilja att kasta sig in i festligheter när hon egentligen bara längtar hem – en känsla som många kan dela och som ger henne en sympatisk vardaglighet mitt i all aristokratisk glamour. Trots den här inre dragkampen mellan vad hon vill och vad hon måste, visar Eleanor återigen varför hon är en så stark och engagerande protagonist. När mordet väl inträffar tvekar hon inte att sätta sin egen bekvämlighet åt sidan för att söka svar. Hennes nyfikenhet, hennes rättskänsla och hennes vilja att förstå vad som hänt driver henne ut i världen, även när hon egentligen hade föredragit en lugn kväll hemma. Just den kontrasten – mellan hennes personliga preferenser och hennes moraliska kompass – är en av de stora anledningarna till att hon känns så levande. En annan aspekt som gör boken minnesvärd är hur spännande och oväntat upplösningen faktiskt är. Även om man som läsare börjar förstå seriens struktur efter ett par delar, lyckas Death at the Dance ändå överraska vid rätt tillfällen. Avslutningen känns både dramatisk och tillfredsställande på det där lagom mysiga viset som serien är så bra på. Men även här blir det tydligt att det inte är själva avslöjandet som är den största behållningen. För i den här serien – och särskilt i denna bok – är det resan som är den verkliga charmen. Mötet med de olika karaktärerna, de sociala situationerna där Eleanor ofta är både utanför sin komfortzon och ändå märkligt kompetent, samt alla små absurditeter hon hamnar i längs vägen, skapar en läsupplevelse som är rolig, lättsam och beroendeframkallande. De excentriska människorna runt henne, och de ofta humoristiska hinder som dyker upp, gör att varje kapitel bjuder på något nytt att le åt. Det är just denna kombination av karaktärsdriven humor och lagom doser mysterium som gör att boken sticker ut. Mordgåtan fungerar som en ram, men det är Eleanors reaktioner, relationer och små missöden som står i centrum. Det är där värmen och roligheten finns, och det är också där boken verkligen skiner. Sammanfattningsvis upplevs Death at the Dance som en charmig, underhållande och genuint trivsam fortsättning på serien. Det är inte bara mordets lösning som lockar, utan allt som händer fram tills dess – och framför allt Eleanor själv. Och kanske just därför blir läsupplevelsen så lyckad."
         }
     ]
 }

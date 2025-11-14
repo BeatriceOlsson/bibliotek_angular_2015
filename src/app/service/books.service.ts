@@ -9,7 +9,7 @@ export interface Book {
   opinion: number,
   published: string,
   createdAt: string,
-  image: string [],
+  image: string[],
   link: string,
   description: string,
   text: string,
