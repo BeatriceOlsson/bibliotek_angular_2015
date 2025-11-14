@@ -4,3 +4,10 @@
     --third-color: #B59F78;
     --details-color: #2A3663;
 }
+
+@media (max-width: 780px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+}

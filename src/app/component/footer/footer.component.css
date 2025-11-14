@@ -2,11 +2,24 @@
     background-color: var(--second-color);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-li {
+.footerLink li {
     list-style-type: none;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
+}
+
+.footerLink a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    color: var(--details-color);
+    transition: color 0.4s;
+}
+
+.footerLink a:hover {
+    color: rgba(000, 000, 000, 1);
 }
