@@ -41,6 +41,7 @@
 
 .menyHeader a {
     text-decoration: none;
+    cursor: pointer;
     color: inherit;
     font-size: 1.5rem;
     color: var(--details-color);

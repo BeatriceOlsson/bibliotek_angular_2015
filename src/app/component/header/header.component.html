@@ -2,8 +2,8 @@
   <h1><a routerLink="/">Mitt Bibliotek</a></h1>
   <a routerLink="/"><img src="assets/images/books.png" /></a>
   <ul class="menyHeader" [class.open]="menyOpen">
-    <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
-    <li><a routerLink="book-ditail/:id" (click)="closeMenu()">Senaste läst</a></li>
+    <li><a href="#" routerLink="/" (click)="closeMenu()">Home</a></li>
+    <li><a (click)="latestBook(); closeMenu()">Senaste läst</a></li>
     <li><a routerLink="app-book-list-page" (click)="closeMenu()">Bok lista</a></li>
     <li><a routerLink="" (click)="closeMenu()">Om mig</a></li>
   </ul>
