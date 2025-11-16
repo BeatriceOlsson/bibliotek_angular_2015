@@ -16,7 +16,7 @@ export class ImageSwitchComponent {
   currentImage = computed(() => {
     const images = this.image();
     const index = this.currentIndex();
-    if(!images || images.length === 0) {
+    if (!images || images.length === 0) {
       return 'assets/images/Default_book_cover.webp';
     };
     return images[index];
@@ -26,14 +26,14 @@ export class ImageSwitchComponent {
   // If the index exceeds bounds, it wraps around to the beginning or end.
   next() {
     const images = this.image();
-    if(!images || images.length === 0) return;
+    if (!images || images.length === 0) return;
     const nextIndex = (this.currentIndex() + 1) % images.length;
     this.currentIndex.set(nextIndex);
   }
 
   previous() {
     const images = this.image();
-    if(!images || images.length === 0) return;
+    if (!images || images.length === 0) return;
     const nextIndex = (this.currentIndex() - 1 + images.length) % images.length;
     this.currentIndex.set(nextIndex);
   }

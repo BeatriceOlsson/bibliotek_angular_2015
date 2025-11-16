@@ -11,10 +11,14 @@
     align-items: center;
 }
 
-h1 {
-    font-size: 2em;
+.headerHeader a {
     padding: 0%;
     margin: 0%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    color: var(--details-color);
+    transition: color 0.4s;
 }
 
 .headerHeader img {

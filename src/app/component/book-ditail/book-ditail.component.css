@@ -1,3 +1,19 @@
 .text-block {
     white-space: pre-line;
 }
+
+/*Keaps the image in the center, but the arows mover arownd*/
+.homeImage {
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.homeImage img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

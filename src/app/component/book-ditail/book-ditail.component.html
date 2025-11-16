@@ -1,6 +1,6 @@
 <div *ngIf="book() as currentBook; else loading">
-  <div style="width: 150px; height: auto" class="homeImage">
-    <app-image-switch [image]="currentBook.image"></app-image-switch>
+  <div class="homeImage">
+    <app-image-switch [image]="currentBook.image" width="300px" height="auto"></app-image-switch>
   </div>
   <div class="bookInformation">
     <h1>{{ currentBook.title }}</h1>
