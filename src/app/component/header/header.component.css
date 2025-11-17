@@ -15,9 +15,12 @@
     padding: 0%;
     margin: 0%;
     text-decoration: none;
-    color: inherit;
-    font-size: 2rem;
     color: var(--details-color);
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.5rem;
+    color: var(--details-color);
+    transition: color 0.4s;
     transition: color 0.4s;
 }
 
@@ -34,18 +37,10 @@
 
 .menyHeader li {
     list-style-type: none;
+    font-size: 10px;
     padding-left: 1rem;
-    font-size: 1.5rem;
     padding-right: 1.5rem;
-}
-
-.menyHeader a {
     text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-    font-size: 1.5rem;
-    color: var(--details-color);
-    transition: color 0.4s;
 }
 
 .menyHeader a:hover {
