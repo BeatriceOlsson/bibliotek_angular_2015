@@ -3,27 +3,37 @@ import { ActivatedRoute } from '@angular/router';
 import { Book, BooksService } from '../../service/books.service';
 import { CommonModule } from '@angular/common';
 import { ImageSwitchComponent } from '../image-switch/image-switch.component';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-book-ditail',
   standalone: true,
   imports: [CommonModule, ImageSwitchComponent],
   templateUrl: './book-ditail.component.html',
-  styleUrl: './book-ditail.component.css'
+  styleUrls: ['./book-ditail.component.css']
 })
 
 export class BookDitailComponent {
   private route = inject(ActivatedRoute);
   private bookServer = inject(BooksService)
+  private sub = new Subscription();
 
   books = signal<Book[]>([]);
-  bookId = computed(() => this.route.snapshot.paramMap.get('id'));
-  book = computed<Book | undefined>(() => this.books().find(b => b.id === this.bookId()));
+  bookId = signal<string | null>(null);
+  book = computed<Book | undefined>(() => this.books().find(b => String((b as any).id) === this.bookId()));
 
   constructor() {
     this.bookServer.getBooks().subscribe(data => {
       this.books.set(data);
     });
+
+    this.sub.add(this.route.paramMap.subscribe(params => {
+      this.bookId.set(params.get('id'));
+    }) );
   }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+}
 }
 
