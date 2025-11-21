@@ -10,7 +10,13 @@
     justify-content: space-around;
     align-items: center;
 }
-
+ .headerHeader h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    color: var(--details-color);
+    margin: 0%;
+    padding: 0%;
+}
 .headerHeader a {
     padding: 0%;
     margin: 0%;

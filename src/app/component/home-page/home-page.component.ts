@@ -39,7 +39,7 @@ export class HomePageComponent {
       const sortedData = [...data].sort((a, b) =>
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
-      const latestTow = sortedData.slice(0, 4);
+      const latestTow = sortedData.slice(0, 7);
       this.books.set(latestTow);
     });
   }
