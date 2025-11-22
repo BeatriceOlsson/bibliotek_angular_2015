@@ -17,6 +17,13 @@
     margin: 0%;
     padding: 0%;
 }
+
+/* If the H1 contains an <a>, make the anchor inherit the H1's font-size and color */
+.headerHeader h1 a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
 .headerHeader a {
     padding: 0%;
     margin: 0%;
