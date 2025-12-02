@@ -5,6 +5,13 @@
     --details-color: #2A3663;
 }
 
+h1, h2, h3, h4, p, a, li, button {
+    font-family: 'times new roman', Times, serif;
+}
+p {
+    font-size: large;
+}
+
 @media (max-width: 780px) {
     body {
         margin: 0%;

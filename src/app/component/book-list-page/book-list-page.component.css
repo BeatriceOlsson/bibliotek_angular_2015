@@ -6,7 +6,7 @@
 }
 
 h2 {
-    color: var(--primary-color);
+    color: var(--details-color);
     text-align: center;
     margin-bottom: 2rem;
 }

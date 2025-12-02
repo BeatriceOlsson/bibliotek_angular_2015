@@ -4,11 +4,12 @@ import { Book, BooksService } from '../../service/books.service';
 import { CommonModule } from '@angular/common';
 import { ImageSwitchComponent } from '../image-switch/image-switch.component';
 import { Subscription } from 'rxjs';
+import { LoadingPageComponent } from '../loading-page/loading-page.component';
 
 @Component({
   selector: 'app-book-ditail',
   standalone: true,
-  imports: [CommonModule, ImageSwitchComponent],
+  imports: [CommonModule, ImageSwitchComponent, LoadingPageComponent],
   templateUrl: './book-ditail.component.html',
   styleUrls: ['./book-ditail.component.css']
 })
@@ -21,6 +22,10 @@ export class BookDitailComponent {
   books = signal<Book[]>([]);
   bookId = signal<string | null>(null);
   book = computed<Book | undefined>(() => this.books().find(b => String((b as any).id) === this.bookId()));
+
+  openLink(url: string) {
+    window.open(url, '_blank', 'noopener');
+  };
 
   constructor() {
     this.bookServer.getBooks().subscribe(data => {

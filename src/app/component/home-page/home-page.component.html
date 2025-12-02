@@ -1,4 +1,4 @@
-<div *ngFor="let book of books(); let i = index">
+<div *ngFor="let book of books(); let i = index ">
   <h2 class="homeTitel"><a [routerLink]="['/app-book-ditail', book.id]">{{ book.title }}</a></h2>
   <li class="mobile-flex">
     <!--Container to control image size and reuse the component-->

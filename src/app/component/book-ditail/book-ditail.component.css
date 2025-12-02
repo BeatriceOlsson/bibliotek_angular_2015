@@ -44,8 +44,23 @@
 .bookText h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--details-color);
+    font-size: larger;
     text-align: center;
+}
+.byButton {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: large;
+    color: var(--details-color);
+    border: none;
+    background-color: var(--third-color);
+    border-radius: 1em;
+    margin: 1rem;
+}
+
+.byButton:hover {
+    box-shadow: inset 0 0 10px var(--details-color);
 }
 
 .loading {
